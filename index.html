@@ -9,14 +9,19 @@
 </head>
 <body>
 
+    <input type="checkbox" id="check">
+
     <header class="menu">
+        <label for="check">
+            <ion-icon name="menu-outline" id="butheader"></ion-icon>
+        </label>
         <img src="Logo verde.png" id="icon">
         <ul>
             <li class="links">Produtos</li>
-            <li class="links">Serviços</li>
+            <li class="links">Planos</li>
             <li class="links">Feed</li>
             <li class="links">Cursos</li>
-            <li class="links">Entrar</li>
+            <li class="links"><a href="cadastro.html">Entrar</a></li>
             <li class="links">Contato</li>
             <li class="links">Sobre</li>
         </ul>
@@ -24,40 +29,59 @@
 
     <!-- Menu -->
 
-    <!-- <div class="sidebar">
+    <div class="sidebar">
         <img src="Logo verde.png" class="image" alt="">
         <a href="#"><span>Institucional</span></a>
         <a href="#"><span>Produtos</span></a>
         <a href="#"><span>Galeria</span></a>
         <a href="#"><span>Sobre</span></a>
         <a href="#"><span>Contato</span></a>
-    </div> -->
+    </div>
 
     <div class="inicio">
-        <p>Está com problemas para vender seus produtos ?</p>
-        <p>Conheça o BiMO !</p>
-        <img src="duvida.avif" id="duvida">
+        <div class="iniciobimo">
+            <p>Vai começar sua MEI e não sabe onde comprar seus maquinários?</p>
+            <p>Conheça o <img src="Logo verde.png" id="icon"></p>
+            <input id="butbimo" type="submit" value="Baixe o app e aproveite!">
+        </div>
+        <img src="inicio.png" id="imginicio">
+        <p >Mas o que é o BiMO?</p>
+    </div>
+
+    <div id="o-que-e">
+        <div id="textobimo">
+            <p>O BiMO é a plataforma ideal para quem busca praticidade, economia e sustentabilidade 
+                no mercado de maquinários usados. Se você é um microempreendedor individual (MEI), investidor iniciante ou faz parte de uma empresa que está fechando, abrindo ou em 
+                fase de expansão, o BiMO foi pensado especialmente para você. 
+                Nossa missão é facilitar a compra e venda de equipamentos industriais entre empresas, contribuindo para o crescimento da economia local e a redução de desperdícios.</p>
+            <input id="butbimo" type="submit" value="Baixe o app e aproveite!">
+        </div>
     </div>
 
     <section id="como-funciona">
         <h1>Como funciona o BiMO</h1>
         <div class="cards">
             <div class="funcoes">
+                <div class="circle green"></div>
                 <h3>Crie uma Conta</h3>
                 <p>Cadastre-se e comece a explorar produtos e serviços voltados para microempreendedores.</p>
             </div>
             <div class="funcoes">
+                <div class="circle blue"></div>
                 <h3>Encontre o que Precisa</h3>
                 <p>Pesquise por equipamentos ou serviços para começar ou expandir seu negócio.</p>
             </div>
             <div class="funcoes">
+                <div class="circle green"></div>
                 <h3>Checkout Fácil</h3>
                 <p>Pagamento rápido e seguro com opções flexíveis para as necessidades do seu negócio.</p>
             </div>
             <div class="funcoes">
+                <div class="circle blue"></div>
                 <h3>Cresça seu Negócio</h3>
                 <p>Renove ou expanda seu negócio com as ferramentas certas para o sucesso.</p>
             </div>
+            <div class="line"></div>
         </div>
     </section>
 
@@ -94,6 +118,8 @@
             <p><a href="mailto:isadorajardim3003@gmail.com">E-mail</a></p>
         </div>
     </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 </body>
 </html>
