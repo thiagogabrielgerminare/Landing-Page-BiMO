@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F4F7E6;
+    scroll-behavior: smooth;
+    height: 100vh;
+    background: linear-gradient(to right, #23C2FF 49.9%, #2CFC71 50.2%);
+}
+
+/* Interface do form */
+.formLogin {
+    display: flex;
+    width: 80%;
+    border-radius: 1%;
+    margin-top: 7%;
+    height: 70vh;
+}
+
+/* Estilo do H1 */
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 230%; 
+    text-align: center;
+   
+}
+/* Cor do "p" */
+.formLogin p {
+    font-size: 87.5%;
+    margin-bottom: 25px;
+    margin: 0;
+    text-align: center;
+}
+/* Estilo da barra do input */
+.formLogin .input {
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 2px solid #23C2FF;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: all linear 160ms;
+    outline: none;
+    width: 400px;
+}   
+
+.formLogin .input::placeholder{
+    color: #23C2FF;
+}
+
+/* Quando clicar na barra de input fica com a borda verde */
+.formLogin input:focus {
+    border: 2px solid #69DF1B;
+}
+
+/* Interface do "a" */
+.formLogin a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    transition: all linear 160ms;
+}
+
+#pagelogin{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+
+#imglogin{
+    width: 70%;
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: lightblue;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.clogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    padding: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.clogin h1{
+    margin-top: 16%;
+    margin-bottom: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #23C2FF;
+    font-size: 300%;
+}
+
+.clogin p{
+    color: red;
+}
+
+#butentrar{
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 30px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    transition: all linear 160ms;
+    outline: none;
+    width: 200px;
+    background: linear-gradient(to right,#2CFC71,#2176ae);
+    border: 2px solid white;
+    color: white;
+    font-size: 130%;
+    cursor: pointer;
+}
