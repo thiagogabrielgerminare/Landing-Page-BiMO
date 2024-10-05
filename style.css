@@ -75,8 +75,7 @@ ul{
 .inicio{
     display: flex;
     background: linear-gradient(to left,#2CFC71,#2176ae);
-    border-top: 5px solid #69DF1B;
-    border-bottom: 5px solid #69DF1B;
+    border-bottom: 5px solid #2CFC71;
     color: #F4F7E6;
     font-size: 230%;
     width: 100%;
@@ -119,6 +118,19 @@ ul{
     margin-left: 2%;
 }
 
+#butinicio{
+    margin-top: 4%;
+    border-radius: 30px;
+    width: 180px;
+    height: 40px;
+    background: linear-gradient(to right,#2CFC71,#2176ae);
+    color: #F4F7E6;
+    border: 2px solid #F4F7E6;
+    cursor: pointer;
+    display: flex;
+    margin-right: 20%;
+}
+
 #divimginicio{
     display: flex;
     width: 40%;
@@ -134,9 +146,20 @@ ul{
 }
 
 #texto{
+    display: flex;
     width: 30%;
     padding-top: 2%;
     font-size: 70%;
+    margin-right: 30%;
+    margin-left: 40.6%;
+}
+
+#quadrado{
+    width: 30px;
+    height: 30px;
+    background-color: #2CFC71;
+    transform: rotate(45deg);
+    z-index: -1;
 }
 
 /* ------------------------------------------------- Texto explicando sobre o BiMO ----------------------------------------------*/
@@ -146,13 +169,13 @@ ul{
 }
 
 #textobimo{
-    margin-top: 1%;
+    margin-top: 0.5%;
     width: 50%;
     text-align: center;
 }
 
 #butbimo{
-    margin-top: 3%;
+    margin-top: 4%;
     border-radius: 30px;
     width: 180px;
     height: 40px;
@@ -261,6 +284,33 @@ ul{
 
 .servicos p{
     padding-top: 3%;
+}
+
+/* --------------------------------------------------------- Nossos planos ----------------------------------------------------------- */
+#planos-bimo{
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.tabela-planos{
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+th, td {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #f2f2f2;
+    text-align: center;
 }
 
 /* -------------------------------------------------------- Menu final da tela ----------------------------------------------------- */
