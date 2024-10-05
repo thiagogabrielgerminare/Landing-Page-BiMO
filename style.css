@@ -75,8 +75,8 @@ ul{
 .inicio{
     display: flex;
     background: linear-gradient(to left,#2CFC71,#2176ae);
-    border-top: 5px solid #69DF1B;
-    border-bottom: 5px solid #69DF1B;
+    /* border-top: 5px solid #69DF1B; */
+    /* border-bottom: 5px solid #69DF1B; */
     color: #F4F7E6;
     font-size: 230%;
     width: 100%;
