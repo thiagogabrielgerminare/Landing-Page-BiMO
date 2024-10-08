@@ -109,6 +109,10 @@ body{
     font-size: 300%;
 }
 
+.clogin label{
+    color: #23C2FF;
+}
+
 #butentrar{
     padding: 10px;
     font-size: 14px;

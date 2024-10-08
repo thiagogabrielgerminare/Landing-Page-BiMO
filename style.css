@@ -75,8 +75,7 @@ ul{
 .inicio{
     display: flex;
     background: linear-gradient(to left,#2CFC71,#2176ae);
-    border-top: 5px solid #69DF1B;
-    border-bottom: 5px solid #69DF1B;
+    border-bottom: 5px solid #2CFC71;
     color: #F4F7E6;
     font-size: 230%;
     width: 100%;
@@ -141,8 +140,7 @@ ul{
 }
 
 #imginicio{
-    width: 90%;
-    height: 80vh;
+    max-width: 90%;
     padding-left: 10%;
 }
 
@@ -215,7 +213,7 @@ ul{
     transform: translateY(-10px);
 }
 
-.circle {
+.circulo {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -223,22 +221,22 @@ ul{
     z-index: 1;
 }
 
-.green {
+.funcoes .verde {
     background-color: #76d700;
 }
 
-.blue {
+.funcoes .azul {
     background-color: #00b4ff;
 }
 
-.line {
+.linha {
     position: absolute;
-    top: 30%; /* Posiciona no meio dos círculos */
+    top: 30%;
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: black; /* Cor da linha */
-    z-index: 0; /* Coloca a linha atrás dos círculos */
+    background-color: black;
+    z-index: 0;
 }
 
 /* -------------------------------------------------------- Nossos serviços --------------------------------------------------------- */
@@ -253,27 +251,28 @@ ul{
 }
 
 .servicos{
-    width: 400px;
-    height: 54vh;
+    max-width: 400px;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 2%;
     text-align: center;
+    padding-bottom: 1%;
 }
 
 #imgservicos{
     width: 100%;
     height: 200px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 #butservicos{
     color: #F4F7E6;
     background-color: #2176ae;
-    padding: 1%;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
     margin-top: 4%;
-    border-radius: 8px;
     border: #69DF1B 3px solid;
     cursor: pointer;
 }
@@ -288,10 +287,16 @@ ul{
 }
 
 /* --------------------------------------------------------- Nossos planos ----------------------------------------------------------- */
-#planos-bimo{
+#planos-bimo h1{
     display: flex;
     justify-content: center;
-    /* background-color: red; */
+    margin-top: 7%;
+}
+
+#infoplanos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
 }
 
 .tabela-planos{
@@ -304,14 +309,184 @@ ul{
 }
 
 th, td {
-    border: 2px solid #ddd;
+    border: 2px solid #000000;
     padding: 8px;
     text-align: center;
 }
 
-thead th {
-    background-color: #f2f2f2;
+tbody td{
+    font-weight: bold;
+}
+
+thead th:nth-child(2) {
+    color: #c67838;
+}
+
+thead th:nth-child(3) {
+    color: #c0c0c0;
+}
+
+thead th:nth-child(4) {
+    color: #ffcc00;
+}
+
+tbody td:nth-child(2) {
+    color: #c67838;
+    font-weight: bold;
+}
+
+tbody td:nth-child(3) {
+    color: #c0c0c0;
+    font-weight: bold;
+}
+
+tbody td:nth-child(4) {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #D9D9D9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+#nossos-planos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    max-width: 320px;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    margin: 4%;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    background-color: #EAE9E9;
+}
+
+.card h1{
+    font-size: 200%;
+}
+
+.card h1, .card h3{
+    margin: 8%;
+}
+
+.bronze span{
+    color: #c67838;
+}
+
+.prata span{
+    color: #c0c0c0;
+}
+
+.ouro span{
+    color: #ffcc00;
+}
+
+.card .borda{
+    height: 15px;
+}
+
+.bronze .borda{
+    background-color: #c67838;
+}
+
+.prata .borda{
+    background-color: #c0c0c0;
+}
+
+.ouro .borda{
+    background-color: #ffcc00;
+}
+
+.planos{
+    padding: 0 20px;
     text-align: center;
+}
+
+#butplanos{
+    color: #F4F7E6;
+    width: 100px;
+    height: 25px;
+    border-radius: 30px;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.bronze #butplanos{
+    background-color: #c67838;
+}
+
+.prata #butplanos{
+    background-color: #c0c0c0;
+}
+
+.ouro #butplanos{
+    background-color: #ffcc00;
+}
+
+/* -------------------------------------------------------- Nossa equipe ------------------------------------------------------------- */
+#nossa-equipe{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.caixasequipe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1%;
+}
+ 
+.equipe{
+    width: 150px;
+    height: 200px;
+    position: relative;
+    margin: 3%;
+}
+
+.equipe p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    padding: 5%;
+    margin-top: 12%;
+}
+
+.image{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-42%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caixasequipe .azul p{
+    background-color: #00b4ff;
+}
+
+.caixasequipe .verde p{
+    background-color: #2CFC71;
 }
 
 /* -------------------------------------------------------- Menu final da tela ----------------------------------------------------- */
@@ -356,6 +531,7 @@ thead th {
         color: white;
         width: 130px;
         height: 100%;
+        z-index: 1000;
     }
     
     .sidebar img{
