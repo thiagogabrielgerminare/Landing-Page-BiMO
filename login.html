@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Página de Login</title>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="login.css">
@@ -10,19 +10,20 @@
 <body>
 
     <div id="pagelogin">
-        <form method="POST" class="formLogin">
-            <div id="img">
-                <img src="login.png" id="imglogin">
-            </div>
-            <div class="clogin">
-                <h1>Faça login</h1>
-                <label for="femail">Email ADM</label>
-                <input type="email" class="input" id="femail" placeholder="Digite seu e-mail" required/>
-                <label for="fsenha">Senha ADM</label>
-                <input type="password" class="input" id="fsenha" placeholder="Digite sua senha" required/>
-                <a href="admin.html"><input type="button" value="Entrar" id="butentrar" /></a>
-            </div>
-        </form>
+        <a href="index.html" id="seta"><p>⬅️</p></a>
+        <div class="login">
+            <form method="POST" class="formLogin">
+                <div id="img">
+                    <img src="login.png" id="imglogin">
+                </div>
+                <div class="clogin">
+                    <h1>Faça login</h1>
+                    <input type="email" name="email" class="input" placeholder="Digite seu e-mail" required/>
+                    <input type="password" name="senha" class="input" placeholder="Digite sua senha" required/>
+                    <a href="admin.html"><input type="button" value="Entrar" id="butentrar" /></a>
+                </div>
+            </form>
+        </div>
     </div>
     
 </body>

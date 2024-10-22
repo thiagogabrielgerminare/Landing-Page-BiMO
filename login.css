@@ -4,18 +4,36 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #F4F7E6;
     scroll-behavior: smooth;
     height: 100vh;
-    background: linear-gradient(to right, #23C2FF 49.9%, #2CFC71 50.2%);
+    background: linear-gradient(to right, #23C2FF , #2CFC71);
+}
+
+#pagelogin{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: yellow; */
+}
+
+#seta{
+    font-size: 300%;
+    padding: 0.5%;
+    color: #23C2FF;
+    /* background-color: red; */
+}
+
+.login{
+    display: flex;
+    justify-content: center;
 }
 
 /* Interface do form */
 .formLogin {
     display: flex;
     width: 80%;
-    border-radius: 1%;
     margin-top: 7%;
     height: 70vh;
 }
@@ -46,7 +64,7 @@ body{
     margin-top: 5px;
     transition: all linear 160ms;
     outline: none;
-    width: 400px;
+    width: 90%;
 }   
 
 .formLogin .input::placeholder{
@@ -66,12 +84,6 @@ body{
     transition: all linear 160ms;
 }
 
-#pagelogin{
-    display: flex;
-    justify-content: center;
-    height: 90vh;
-}
-
 #imglogin{
     width: 70%;
 }
@@ -89,21 +101,18 @@ body{
 .clogin{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     width: 30%;
-    padding: 3%;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 8%;
     background-color: white;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
 .clogin h1{
-    margin-top: 16%;
+    margin-top: 5%;
     margin-bottom: 8%;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #23C2FF;
     font-size: 300%;
@@ -120,10 +129,103 @@ body{
     margin-top: 7%;
     transition: all linear 160ms;
     outline: none;
-    width: 200px;
-    background: linear-gradient(to right,#2CFC71,#2176ae);
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: linear-gradient(to right,#2CFC71,#23C2FF);
     border: 2px solid white;
     color: white;
     font-size: 130%;
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    #seta{
+        font-size: 280%;
+        padding: 0;
+    }
+
+    .login{
+        justify-content: start;
+        align-items: center;
+        height: 900px;
+    }
+
+    .formLogin{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #pagelogin{
+        height: 108%;
+    }
+
+    .login{
+        /* background-color: tan; */
+        align-items: center;
+        height: 800px;
+    }
+
+    .formLogin{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #pagelogin{
+       display: block;
+       height: 115%;
+    }
+
+    #seta{
+       font-size: 250%;
+    }
+    
+    .login{
+        align-items: center;
+        height: 450px;
+    }
+
+    .formLogin{
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #img{
+        display: none;
+    }
+
+    .clogin{
+        width: 75%;
+        padding: 4%;
+        border-radius: 30px;
+    }
+
+    .clogin h1{
+        font-size: 230%;
+    }
+
+    .formLogin .input{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #pagelogin{
+        height: 200%;
+     }
+     
+     .login{
+         align-items: center;
+         height: 320px;
+     }
+}
+
+@media screen and (max-width: 200px) {
+    #pagelogin{
+        height: 230%;
+    }
 }

@@ -13,30 +13,23 @@ body{
     scroll-behavior: smooth;
 }
 
-#check{
-    display: none;
-}
-
-/* ------------------------------------------------------ Menu fixo BiMO ------------------------------------------------------- */
-.menu{
+/* ------------------------------------------------------ Menu fixo BiMO e Menu Lateral------------------------------------------------------- */
+.menu {
     display: flex;
     position: fixed;
-    top: 0;
     width: 100%;
     height: 10%;
     padding-top: 1%;
     padding-bottom: 1%;
+    top: 0;
+    left: 0;
     justify-content: space-around;
     align-items: center;
     background-color: #2176ae;
     z-index: 1000;
 }
 
-#butheader{
-    display: none;
-}
-
-ul{
+.menu-items{
     display: flex;
     justify-content: space-between;
     width: 70%;
@@ -48,26 +41,40 @@ ul{
     padding: 0 15px;
 }
 
-.links:hover{
-    color: #69DF1B;
+.menu-items .links {
+    color: #F4F7E6;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
-.links a{
+.menu-items .links a {
     color: #F4F7E6;
     text-decoration: none;
 }
 
-.links a:hover{
+.menu-items .links:hover{
+    color: #69DF1B;
+}
+
+.menu-items .links a:hover{
     color: #69DF1B;
 }
 
 #icon{
-    width: 10%;
+    max-width: 10%;
+    height: auto;
     cursor: pointer;
 }
 
-/* -------------------------------------------- Menu invisível: vai aparecer quando diminuir o tamanho da tela ------------------- */
-.sidebar{
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 30px;
+    padding: 1%;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
     display: none;
 }
 
@@ -80,7 +87,7 @@ ul{
     font-size: 230%;
     width: 100%;
     height: 70vh;
-    margin-top: 5.6%;
+    margin-top: 6%;
     margin-bottom: 2%;
     padding-top: 2%;
     padding-bottom: 1%;
@@ -114,7 +121,6 @@ ul{
 
 #iconiniciobimo{
     width: 25%;
-    cursor: auto;
     margin-left: 2%;
 }
 
@@ -154,11 +160,55 @@ ul{
 }
 
 #quadrado{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background-color: #2CFC71;
     transform: rotate(45deg);
     z-index: -1;
+}
+
+@media screen and (max-width: 960px) {
+    .inicio{
+        width: 100%;
+        margin-top: 18%;
+        font-size: 120%;
+        height: 310px;
+        padding-top: 10%;
+    }
+
+    .iniciobimo p{
+        width: 150%;
+    }
+
+    #iconiniciobimo{
+        width: 30%;
+        height: 5vh;
+        margin-left: 5%;
+    }
+
+    #butinicio{
+        margin-top: 10%;
+    }
+
+    #divimginicio{
+        height: auto;
+    }
+
+    #texto{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 7vh;
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 100%;
+    }
+
+    #quadrado{
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /* ------------------------------------------------- Texto explicando sobre o BiMO ----------------------------------------------*/
@@ -182,6 +232,20 @@ ul{
     color: #F4F7E6;
     border: 2px solid #F4F7E6;
     cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    #textobimo{
+        width: 90%;
+        margin-top: 2%;
+    }
+
+    #butbimo{
+        width: 220px;
+        height: 50px;
+        font-size: 100%;
+        margin-top: 5%;
+    }
 }
 
 /* ---------------------------------------------------- Como funciona o BiMO --------------------------------------------------------- */
@@ -239,9 +303,41 @@ ul{
     z-index: 0;
 }
 
+@media screen and (max-width: 960px) {
+    .funcoes{
+        width: 70%;
+        margin-top: 6%;
+        padding: 2%;
+        border-radius: 20px;
+    }
+
+    .funcoes .verde{
+        display: none;
+    }
+
+    .funcoes .azul{
+        display: none;
+    }
+
+    .funcoes:nth-child(2n + 1){
+        background-color: #2CFC71;
+    }
+
+    .funcoes:nth-child(2n){
+        background-color: #00b4ff;
+    }
+}
+
 /* -------------------------------------------------------- Nossos serviços --------------------------------------------------------- */
 #servicos-bimo{
     text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    #servicos-bimo{
+        margin-top: 15%;
+        font-size: 120%;
+    }
 }
 
 .caixas{
@@ -259,6 +355,16 @@ ul{
     padding-bottom: 1%;
 }
 
+@media screen and (max-width: 960px) {
+    .caixas{
+        gap: 20px;
+    }
+
+    .servicos{
+        padding-bottom: 4%;
+    }
+}
+
 #imgservicos{
     width: 100%;
     height: 200px;
@@ -269,9 +375,9 @@ ul{
 #butservicos{
     color: #F4F7E6;
     background-color: #2176ae;
-    width: 100px;
-    height: 30px;
-    border-radius: 30px;
+    width: 28%;
+    height: 4vh;
+    border-radius: 10px;
     margin-top: 4%;
     border: #69DF1B 3px solid;
     cursor: pointer;
@@ -294,6 +400,7 @@ ul{
 }
 
 #infoplanos{
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 4%;
@@ -317,6 +424,16 @@ th, td {
 tbody td{
     font-weight: bold;
 }
+
+/* @media screen and (max-width: 960px) {
+    #infoplanos{
+        background-color: red;
+    }
+
+    .tabela-planos{
+        width: 50%;
+    }
+} */
 
 thead th:nth-child(2) {
     color: #c67838;
@@ -431,6 +548,13 @@ tbody tr:nth-child(even) {
     background-color: #ffcc00;
 }
 
+@media screen and (max-width: 960px) {
+    .tabela-planos{
+        width: 90%;
+        font-size: 100%;
+    }
+}
+
 /* -------------------------------------------------------- Nossa equipe ------------------------------------------------------------- */
 #nossa-equipe{
     text-align: center;
@@ -489,78 +613,156 @@ tbody tr:nth-child(even) {
     background-color: #2CFC71;
 }
 
+@media screen and (max-width: 960px) {
+    .caixasequipe{
+        margin-top: 8%;
+        gap: 30px;
+        margin-top: 10%;
+        margin-bottom: 8%;
+        /* background-color: red; */
+        width: 95%;
+    }
+
+    .equipe{
+        margin: 0;
+        margin-bottom: 8%;
+    }
+
+    .caixasequipe .azul p{
+        background-color: #00b4ff;
+    }
+}
+
 /* -------------------------------------------------------- Menu final da tela ----------------------------------------------------- */
-.final{
-    display: flex;
-    background-color: #2176ae;
-    color: #F4F7E6;
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-top: 6%;
-    justify-content: space-evenly;
-    align-items: center;
-    font-weight: bold;
-}
-
-.final h2{
-    font-size: 200%;
-}
-
-.final p{
-    font-size: 140%;
-    padding-top: 10%;
+#final {
     text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #2176ae;
+    align-content: center;
 }
 
-.final a{
+#final h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.redessociais {
+    display: inline-block;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.redessociais h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+}
+
+.redessociais a{
     color: #F4F7E6;
     text-decoration: none;
+    font-size: 130%;
 }
 
-.final a:hover{
+.redessociais a:hover{
     color: #69DF1B;
 }
 
-/* -------------------------------------------------------- Media Queries ---------------------------------------------------------- */
-@media (max-width: 1070px) {
-    .sidebar{
-        display: block;
-        position: fixed;
-        background-color: #2176ae;
-        color: white;
-        width: 130px;
-        height: 100%;
-        z-index: 1000;
-    }
-    
-    .sidebar img{
-        width: 55%;
-        padding-top: 30px;
-    }
-    
-    .sidebar a{
-        padding: 25px;
-        padding-top: 30px;
-        color: white;
-        text-decoration: none;
-    }
-    
-    .sidebar span{
-        padding-left: 8px;
+#instagram, #email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#iconinstagram, #iconemail {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#instagram p, #email p {
+    margin: 0;
+}
+
+#empresa {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 10%;
+}
+
+#empresa h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+#imgkyndred {
+    width: 50%;
+}
+
+@media screen and (max-width: 960px) {
+    .redessociais{
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 6%;
     }
 
-    ul{
-        display: none;
+    .redessociais h2{
+        margin-bottom: 6%;
+    }
+
+    #empresa{
+        margin-left: 0;
     }
 }
 
-@media (max-width: 1070px) {
+/* -------------------------------------------------------- Media Queries ---------------------------------------------------------- */
+@media screen and (max-width: 960px) {
+    .menu {
+        justify-content: space-between;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        background-color: #2176ae;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .menu-items .links {
+        margin: 15px 0;
+        padding: 4%;
+        width: 50%;
+        text-align: start;
+    }
+
+    #checkmenu:checked ~ .menu .menu-items {
+        transform: translateX(0);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu img {
+        margin-left: 20px;
+    }
+
     .cards {
         flex-direction: column;
     }
 
-    .line {
+    .linha {
         display: none;
     }
+}
+
+@media screen and (max-width: 320px) {
+    
 }

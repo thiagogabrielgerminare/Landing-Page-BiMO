@@ -9,33 +9,28 @@
 </head>
 <body>
 
-    <input type="checkbox" id="check">
+    <input type="checkbox" id="checkmenu">
 
     <header class="menu">
-        <label for="check">
-            <ion-icon name="menu-outline" id="butheader"></ion-icon>
-        </label>
-        <img src="Logo verde.png" id="icon">
-        <ul>
-            <li class="links">Produtos</li>
-            <li class="links">Planos</li>
-            <li class="links">Feed</li>
-            <li class="links">Cursos</li>
+        <img src="Logo verde.png" id="icon" alt="Logo">
+        <ul class="menu-items">
+            <li class="links"><a href="#servicos-bimo">Produtos</a></li>
+            <li class="links"><a href="#servicos-bimo">Feed</a></li>
+            <li class="links"><a href="#servicos-bimo">Cursos</a></li>
+            <li class="links"><a href="#planos-bimo">Planos</a></li>
+            <li class="links"><a href="#nossa-equipe">Equipe</a></li>
             <li class="links"><a href="login.html">Entrar</a></li>
-            <li class="links">Contato</li>
-            <li class="links">Sobre</li>
+            <li class="links"><a href="#final">Contato</a></li>
+            <li class="links"><a href="#texto">Sobre</a></li>
         </ul>
+        <label for="checkmenu" class="menu-icon">
+            <ion-icon name="menu-outline" id="butsidebar"></ion-icon>
+        </label>
     </header>
 
     <!-- Menu -->
-    <div class="sidebar">
-        <img src="Logo verde.png" class="image" alt="">
-        <a href="#"><span>Institucional</span></a>
-        <a href="#"><span>Produtos</span></a>
-        <a href="#"><span>Galeria</span></a>
-        <a href="#"><span>Sobre</span></a>
-        <a href="#"><span>Contato</span></a>
-    </div>
+    
+    <!-- Fim do Menu -->
 
     <div class="inicio">
         <div class="iniciobimo">
@@ -60,6 +55,7 @@
         </div>
     </div>
 
+    <!---------------------------------------------------- Como funciona o bimo ---------------------------------------------------------->
     <section id="como-funciona">
         <h1>Como funciona o BiMO</h1>
         <div class="cards">
@@ -68,17 +64,17 @@
                 <h3>Crie uma Conta</h3>
                 <p>Cadastre-se e comece a explorar produtos e serviços voltados para microempreendedores.</p>
             </div>
-            <div class="funcoes">
+            <div class="funcoes azul">
                 <div class="circulo azul"></div>
                 <h3>Encontre o que Precisa</h3>
                 <p>Pesquise por equipamentos ou serviços para começar ou expandir seu negócio.</p>
             </div>
-            <div class="funcoes">
+            <div class="funcoes verde">
                 <div class="circulo verde"></div>
                 <h3>Checkout Fácil</h3>
                 <p>Pagamento rápido e seguro com opções flexíveis para as necessidades do seu negócio.</p>
             </div>
-            <div class="funcoes">
+            <div class="funcoes azul">
                 <div class="circulo azul"></div>
                 <h3>Cresça seu Negócio</h3>
                 <p>Renove ou expanda seu negócio com as ferramentas certas para o sucesso.</p>
@@ -185,6 +181,7 @@
         </div>
     </section>
 
+    <!----------------------------------------------------------------- Nossa equipe ------------------------------------------------------->
     <section id="nossa-equipe">
         <h1>Nossa equipe</h1>
         <div class="caixasequipe">
@@ -214,31 +211,32 @@
             </div>
             <div class="equipe azul">
                 <div class="image">
-                    <img src="feed.jpg" alt="Foto">
+                    <img src="nakashima.jpg" alt="Foto">
                 </div>
                 <p>Nome</p>
             </div>
             <div class="equipe verde">
                 <div class="image">
-                    <img src="feed.jpg" alt="Foto">
+                    <img src="thiago.jpg" alt="Foto">
                 </div>
                 <p>Nome</p>
             </div>
             <div class="equipe azul">
                 <div class="image">
-                    <img src="feed.jpg" alt="Foto">
+                    <img src="bia.jpg" alt="Foto">
                 </div>
-                <p>Nome</p>
+                <p>Oie pessoal! Eu sou a Beatriz e faço parte do BiMO, na divisão de desenvolvimento de sistemas.
+                    Meu trabalho é cuidar da experiência do usuário dentro do app, criando uma interface chamativa e amigável!</p>
             </div>
             <div class="equipe verde">
                 <div class="image">
-                    <img src="feed.jpg" alt="Foto">
+                    <img src="loureiro.jpg" alt="Foto">
                 </div>
                 <p>Nome</p>
             </div>
             <div class="equipe azul">
                 <div class="image">
-                    <img src="feed.jpg" alt="Foto">
+                    <img src="vicente.jpg" alt="Foto">
                 </div>
                 <p>Nome</p>
             </div>
@@ -258,12 +256,22 @@
     </section>
 
     <!-------------------------------------------------------------- Menu final -------------------------------------------------------------->
-    <section class="final">
-        <h2>Comece a usar o BiMO!</h2>
-        <div id="redessocias">
+    <section id="final">
+        <h1>Comece a usar o BiMO!</h1>
+        <div class="redessociais">
             <h2>Redes Sociais</h2>
-            <p><a href="https://www.instagram.com/business_market_outlet/" target="_blank">Instagram</a></p>
-            <p><a href="mailto:isadorajardim3003@gmail.com">E-mail</a></p>
+            <div id="instagram">
+                <img src="instagram (1).png" id="iconinstagram">
+                <p><a href="https://www.instagram.com/business_market_outlet/" target="_blank">business_market_outlet</a></p>
+            </div>
+            <div id="email">
+                <img src="email.png" id="iconemail">
+                <p><a href="mailto:isadorajardim3003@gmail.com">bimo@gmail.com</a></p>
+            </div>
+        </div>
+        <div id="empresa">
+            <h2>Realização</h2>
+            <img src="kyndred.png" id="imgkyndred">
         </div>
     </section>
 
