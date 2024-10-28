@@ -15,14 +15,12 @@ body{
     display: flex;
     height: 100vh;
     overflow: hidden;
-    /* background-color: yellow; */
 }
 
 #seta{
     font-size: 300%;
     padding: 0.5%;
     color: #23C2FF;
-    /* background-color: red; */
 }
 
 .login{
@@ -122,6 +120,12 @@ body{
     color: #23C2FF;
 }
 
+/* Texto de erro da página de erro */
+.clogin p{
+    color: red;
+}
+/* ------------------------------- */
+
 #butentrar{
     padding: 10px;
     font-size: 14px;
@@ -138,6 +142,8 @@ body{
     font-size: 130%;
     cursor: pointer;
 }
+
+
 
 @media screen and (max-width: 900px) {
     #seta{
@@ -163,7 +169,6 @@ body{
     }
 
     .login{
-        /* background-color: tan; */
         align-items: center;
         height: 800px;
     }
