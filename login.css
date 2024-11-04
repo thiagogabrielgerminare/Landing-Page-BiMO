@@ -125,6 +125,12 @@ body{
     color: red;
 }
 /* ------------------------------- */
+.olho-senha{
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------------------- */
 
 #butentrar{
     padding: 10px;
