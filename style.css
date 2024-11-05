@@ -97,7 +97,6 @@ h1{
 
 #menuHamb{
     flex-direction: column;
-    /* background-color: #0ce253; */
     width: 100vw;
     height: 100vh;
     margin-top: 80px;
@@ -188,7 +187,6 @@ h1{
 .inicio{
     display: flex;
     background: linear-gradient(to left,#2CFC71,#2176ae);
-    /* border-bottom: 5px solid #2CFC71; */
     color: #F4F7E6;
     font-size: 270%;
     width: 100%;
@@ -292,31 +290,6 @@ h1{
 #imgcm img{
     width: 300px;
 }
-
-@media screen and (max-width: 960px) {
-    .propagandacm{
-        height: 55vh;
-    }
-
-    #textocm{
-        width: 90%;
-        font-size: 90%;
-    }
-
-    #textocm p{
-        margin-top: 20px;
-    }
-
-    #imgcm{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .propagandacm{
-        height: 92vh;
-    }
-}
 /* -------------------------------------------------------- Nossos serviços --------------------------------------------------------- */
 .propagandaservicos{
     display: flex;
@@ -352,31 +325,6 @@ h1{
     border-radius: 6px;
     cursor: pointer;
 }
-
-@media screen and (max-width: 960px) {
-    .propagandaservicos{
-        height: 60vh;
-    }
-
-    #textoservicos{
-        width: 90%;
-        font-size: 90%;
-    }
-
-    #textoservicos p{
-        margin-top: 20px;
-    }
-
-    #imgpservicos{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .propagandaservicos{
-        height: 95vh;
-    }
-}
 /* --------------------------------------------------------- Nossos planos ----------------------------------------------------------- */
 .propagandaplanos{
     display: flex;
@@ -386,7 +334,7 @@ h1{
     height: 80vh;
     background-color: white;
     font-size: 110%;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 #textoplanos{
@@ -413,213 +361,10 @@ h1{
 #imgplanos img{
     width: 280px;
 }
-
-@media screen and (max-width: 960px) {
-    .propagandaplanos{
-        height: 70vh;
-    }
-
-    #textoplanos{
-        width: 90%;
-        font-size: 90%;
-    }
-
-    #textoplanos p{
-        margin-top: 20px;
-    }
-
-    #imgplanos{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .propagandaplanos{
-        height: 105vh;
-    }
-}
-/* -------------------------------------------------------- Nossa equipe ------------------------------------------------------------- */
-#nossa-equipe {
-    text-align: center;
-    font-size: 150%;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-.equipecarrossel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-container {
-    position: relative;
-    width: 40%;
-    margin-top: 30px;
-    overflow: hidden;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.equipe {
-    min-width: 100%;
-    height: 50vh;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-}
-
-.eazul {
-    background-color: #008dbbb7;
-}
-
-.everde {
-    background-color: #80cc35;
-}
-
-.image img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.navigation {
-    margin-top: 20px;
-}
-
-.arrow {
-    color: #F4F7E6;
-    background-color: #008dbbb7;
-    border: 4px solid;
-    font-size: 70px;
-    margin: 80px;
-    border-radius: 50%;
-    width: 90px;
-    cursor: pointer;
-    display: none;
-}
-
-.arrow:hover{
-    color: #008dbbb7;
-    background-color: #F4F7E6;
-    border-color: #2176ae;
-}
-
-@media screen and (max-width: 960px) {
-    .carousel-container{
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .equipe{
-        height: 67vh;
-    }
-
-    .image img{
-        width: 180px;
-        height: 180px;
-    }
-
-    .arrow{
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .equipe{
-        height: 115vh;
-    }
-}
-
-/* Estilos para controlar a exibição dos cards */
-#card1:checked ~ .carousel-container .carousel {
-    transform: translateX(0);
-}
-
-#card2:checked ~ .carousel-container .carousel {
-    transform: translateX(-100%);
-}
-
-#card3:checked ~ .carousel-container .carousel {
-    transform: translateX(-200%);
-}
-
-#card4:checked ~ .carousel-container .carousel {
-    transform: translateX(-300%);
-}
-
-#card5:checked ~ .carousel-container .carousel {
-    transform: translateX(-400%);
-}
-
-#card6:checked ~ .carousel-container .carousel {
-    transform: translateX(-500%);
-}
-
-#card7:checked ~ .carousel-container .carousel {
-    transform: translateX(-600%);
-}
-
-#card8:checked ~ .carousel-container .carousel {
-    transform: translateX(-700%);
-}
-
-#card9:checked ~ .carousel-container .carousel {
-    transform: translateX(-800%);
-}
-
-#card10:checked ~ .carousel-container .carousel {
-    transform: translateX(-900%);
-}
-
-#card11:checked ~ .carousel-container .carousel {
-    transform: translateX(-1000%);
-}
-
-/* Controle para setas de navegação cíclica */
-/* Mostrar as setas corretas dependendo do card ativo */
-#card1:checked ~ .navigation .prev[for="card11"],
-#card1:checked ~ .navigation .next[for="card2"],
-#card2:checked ~ .navigation .prev[for="card1"],
-#card2:checked ~ .navigation .next[for="card3"],
-#card3:checked ~ .navigation .prev[for="card2"],
-#card3:checked ~ .navigation .next[for="card4"],
-#card4:checked ~ .navigation .prev[for="card3"],
-#card4:checked ~ .navigation .next[for="card5"],
-#card5:checked ~ .navigation .prev[for="card4"],
-#card5:checked ~ .navigation .next[for="card6"],
-#card6:checked ~ .navigation .prev[for="card5"],
-#card6:checked ~ .navigation .next[for="card7"],
-#card7:checked ~ .navigation .prev[for="card6"],
-#card7:checked ~ .navigation .next[for="card8"],
-#card8:checked ~ .navigation .prev[for="card7"],
-#card8:checked ~ .navigation .next[for="card9"],
-#card9:checked ~ .navigation .prev[for="card8"],
-#card9:checked ~ .navigation .next[for="card10"],
-#card10:checked ~ .navigation .prev[for="card9"],
-#card10:checked ~ .navigation .next[for="card11"],
-#card11:checked ~ .navigation .prev[for="card10"],
-#card11:checked ~ .navigation .next[for="card1"] {
-    display: inline-block;
-}
 /* -------------------------------------------------------- Menu final da tela ----------------------------------------------------- */
 #final {
     text-align: center;
     padding: 20px;
-    margin-top: 5%;
     color: white;
     background-color: #2176ae;
     align-content: center;
@@ -683,7 +428,7 @@ input[type="radio"] {
     width: 50%;
 }
 /* -------------------------------------------------------- Media Queries ---------------------------------------------------------- */
-@media screen and (max-width: 960px) {
+@media screen and(max-width: 960px) {
     .menu {
         justify-content: space-between;
         height: 70px;
@@ -730,17 +475,29 @@ input[type="radio"] {
         display: none;
     }
 
-    .caixasequipe{
-        gap: 30px;
-        margin-top: 13%;
-        margin-bottom: 8%;
-        width: 95%;
+    .propagandacm{
+        height: 55vh;
     }
 
-    .equipe{
-        margin: 0;
-        margin-bottom: 8%;
-        margin-top: 6%;
+    .propagandaservicos{
+        height: 60vh;
+    }
+
+    .propagandaplanos{
+        height: 70vh;
+    }
+
+    #textocm, #textoservicos, #textoplanos{
+        width: 90%;
+        font-size: 90%;
+    }
+
+    #textocm > p, #textoservicos > p, #textoplanos > p{
+        margin-top: 20px;
+    }
+
+    #imgcm, #imgpservicos, #imgplanos{
+        display: none;
     }
 
     .redessociais{
@@ -755,5 +512,19 @@ input[type="radio"] {
 
     #empresa{
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .propagandacm{
+        height: 92vh;
+    }
+
+    .propagandaservicos{
+        height: 95vh;
+    }
+
+    .propagandaplanos{
+        height: 105vh;
     }
 }
