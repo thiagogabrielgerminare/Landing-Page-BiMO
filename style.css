@@ -80,8 +80,99 @@ h1{
 }
 
 #butmenu{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
     display: none;
-    width: 35px;
+}
+/* -------------------------------------------------------- MENU LATERAL -------------------------------------------- */
+.hamb{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#menuHamb{
+    flex-direction: column;
+    background-color: #F9A400;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 80px;
+    padding-top: 1px;
+    color: white;
+    display: none;
+    z-index: 999;
+}
+
+#menuHamb > a{
+    display: flex;
+    justify-content: center;
+}
+
+.cont{
+    height: 10vh;
+}
+
+.fechado{
+    display: block;
+    width: 20px;
+    margin: 20px;
+}
+
+.hamb-conta{
+    display: flex;
+    height: 10vh;
+    width: 50vw;
+    background-color: #FFCC68;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px white solid;
+    padding: 0px 5vw;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.hamb-conta > img{
+    margin-left: 2vh;
+    width: 8vh;
+    height: 8vh;
+}
+
+.hamb-redirect{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 3vh 0vh;
+    padding: 2vh;
+    border-bottom: 2px solid white;
+}
+
+.hamb-redirect > p{
+    width: 100%;
+    font-size: 5vh;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.hamb-redirect > p > img{
+    display: inline-block;
+    width: 5vh;
+}
+
+#menuHamb:target ~ * {
+    display: none;
+}
+  
+#menuHamb:target ~ header {
+    display: block;
+}
+
+#menuHamb:target {
+    display: block;
 }
 /* ------------------------------------------------------- Tela com imagem -------------------------------------------------------- */
 .inicio{
@@ -93,7 +184,6 @@ h1{
     width: 100%;
     height: 90vh;
     margin-top: 4%;
-    /* margin-bottom: 2%; */
     padding-top: 2%;
     padding-bottom: 1%;
     text-transform: uppercase;
@@ -167,109 +257,7 @@ h1{
     z-index: -1;
     margin-top: 580px;
 }
-/* ------------------------------------------------- Texto explicando sobre o BiMO ----------------------------------------------*/
-#o-que-e{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    font-weight: bold;
-}
-
-#o-que-e p{
-    font-size: 200%;
-}
-
-#textobimo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 60%;
-    height: 40vh;
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 20px;
-    font-size: 70%;
-    color: #286893;
-    background-color: #c1ddef;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
-}
-
-#butbimo{
-    margin-top: 4%;
-    border-radius: 30px;
-    width: 180px;
-    height: 40px;
-    background: linear-gradient(to right,#74ee9d,#2176ae);
-    color: #F4F7E6;
-    border: solid #d3edfd;
-    cursor: pointer;
-}
 /* ---------------------------------------------------- Como funciona o BiMO --------------------------------------------------------- */
-#como-funciona{
-    display: flex;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-size: 150%;
-    background-color: #2176ae;
-    width: 100%;
-    height: 80vh;
-    color: white;
-    border-top: 4px solid #69DF1B;
-    border-bottom: 4px solid #69DF1B;
-}
-
-.cards{
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-top: 2%;
-}
-
-.funcoes{
-    text-align: center;
-    width: 75%;
-    font-size: 70%;
-    margin: 25px;
-    padding: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-    color: black;
-    background-color: white;
-}
-
-.funcoes p{
-    margin-top: 10px;
-}
-
-.funcoes:hover {
-    transform: scale(1.2);
-}
-
-.direita{
-    position: relative;
-    left: 200px;
-}
-
-.imgfuncao{
-    display: flex;
-    align-items: center;
-    width: 400px;
-}
-
-#telainicial{
-    width: 260px;
-    height: 500px;
-}
-
-
-
-/* Propaganda como funciona BiMO */
 .propagandacm{
     display: flex;
     justify-content: space-evenly;
@@ -297,58 +285,22 @@ h1{
 #imgcm img{
     width: 300px;
 }
+
+@media screen and (max-width: 960px) {
+    .propagandacm{
+        height: 50vh;
+    }
+
+    #textocm{
+        width: 90%;
+        font-size: 90%;
+    }
+
+    #imgcm{
+        display: none;
+    }
+}
 /* -------------------------------------------------------- Nossos serviços --------------------------------------------------------- */
-#servicos-bimo{
-    text-align: center;
-    font-size: 150%;
-    margin-top: 80px;
-}
-
-.caixas{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.servicos{
-    max-width: 400px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-    margin: 2%;
-    text-align: center;
-    padding-bottom: 1%;
-    font-size: 70%;
-}
-
-#imgservicos{
-    width: 100%;
-    height: 200px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-#butservicos{
-    color: #F4F7E6;
-    background-color: #2176ae;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    margin-top: 4%;
-    border: #69DF1B 3px solid;
-    cursor: pointer;
-}
-
-.servicos h2{
-    padding-top: 3%;
-    font-weight: bold;
-}
-
-.servicos p{
-    padding-top: 3%;
-}
-
-
-/* Propaganda serviços BiMO */
 .propagandaservicos{
     display: flex;
     justify-content: space-evenly;
@@ -383,89 +335,22 @@ h1{
     border-radius: 6px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 960px) {
+    .propagandaservicos{
+        height: 60vh;
+    }
+
+    #textoservicos{
+        width: 90%;
+        font-size: 90%;
+    }
+
+    #imgpservicos{
+        display: none;
+    }
+}
 /* --------------------------------------------------------- Nossos planos ----------------------------------------------------------- */
-#nossos-planos h1{
-    text-align: center;
-    margin-top: 10px;
-    font-size: 220%;
-}
-
-.planos-bimo{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card{
-    max-width: 320px;
-    padding-bottom: 2%;
-    border-radius: 20px;
-    margin: 4%;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-    background-color: #EAE9E9;
-}
-
-.card h1, .card h3{
-    margin: 8%;
-}
-
-.bronze span{
-    color: #c67838;
-}
-
-.prata span{
-    color: #c0c0c0;
-}
-
-.ouro span{
-    color: #ffcc00;
-}
-
-.card .borda{
-    height: 15px;
-}
-
-.bronze .borda{
-    background-color: #c67838;
-}
-
-.prata .borda{
-    background-color: #c0c0c0;
-}
-
-.ouro .borda{
-    background-color: #ffcc00;
-}
-
-.planos{
-    padding: 0 20px;
-    text-align: center;
-}
-
-#butplanos{
-    color: #F4F7E6;
-    width: 100px;
-    height: 25px;
-    border-radius: 30px;
-    margin-top: 10%;
-    cursor: pointer;
-}
-
-.bronze #butplanos{
-    background-color: #c67838;
-}
-
-.prata #butplanos{
-    background-color: #c0c0c0;
-}
-
-.ouro #butplanos{
-    background-color: #ffcc00;
-}
-
-
-/* --------------------------------------------------- Propaganda planos BiMO -----------------------------------------------*/
 .propagandaplanos{
     display: flex;
     justify-content: space-evenly;
@@ -500,6 +385,21 @@ h1{
 
 #imgplanos img{
     width: 280px;
+}
+
+@media screen and (max-width: 960px) {
+    .propagandaplanos{
+        height: 70vh;
+    }
+
+    #textoplanos{
+        width: 90%;
+        font-size: 90%;
+    }
+
+    #imgplanos{
+        display: none;
+    }
 }
 /* -------------------------------------------------------- Nossa equipe ------------------------------------------------------------- */
 #nossa-equipe {
@@ -539,7 +439,6 @@ input[type="radio"] {
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    /* color: #F4F7E6; */
 }
 
 .eazul {
@@ -566,7 +465,6 @@ input[type="radio"] {
     background-color: #008dbbb7;
     border: 4px solid;
     font-size: 70px;
-    /* padding: 10px; */
     margin: 80px;
     border-radius: 50%;
     width: 90px;
@@ -578,6 +476,23 @@ input[type="radio"] {
     color: #008dbbb7;
     background-color: #F4F7E6;
     border-color: #2176ae;
+}
+
+@media screen and (max-width: 960px) {
+    .carousel-container{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .equipe{
+        height: 65vh;
+    }
+
+    .arrow{
+        width: 30px;
+        font-size: 20px;
+        margin: 0;
+    }
 }
 
 /* Estilos para controlar a exibição dos cards */
@@ -725,45 +640,16 @@ input[type="radio"] {
         height: 70px;
     }
 
-    .menu-items {
-        display: flex;
-        flex-direction: column;
-        background-color: #2176ae;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease;
-    }
-
-    .menu-items .links {
-        margin: 15px 0;
-        padding: 4%;
-        width: 50%;
-        text-align: start;
-    }
-
-    #checkmenu:checked ~ .menu .menu-items {
-        transform: translateX(0);
+    .menu-items{
+        display: none;
     }
 
     #icon{
-        width: 30%;
-    }
-
-    .menu-icon {
-        display: block;
+        width: 120px;
     }
 
     #butmenu{
         display: block;
-        margin-right: 20px;
-    }
-
-    .menu img {
-        margin-left: 20px;
     }
 
     .inicio{
@@ -796,84 +682,6 @@ input[type="radio"] {
         display: none;
     }
 
-    #texto{
-        justify-content: center;
-        align-items: end;
-        width: 100%;
-        margin-right: 0;
-        margin-left: 0;
-        font-size: 100%;
-    }
-
-    #quadrado{
-        position: absolute;
-        left: 50vw;
-        top: 400px;
-        width: 20px;
-        height: 20px;
-    }
-
-    #textobimo{
-        width: 85%;
-        margin-top: 4%;
-    }
-
-    #butbimo{
-        width: 240px;
-        height: 50px;
-        font-size: 100%;
-        margin-top: 5%;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
-
-    .funcoes{
-        width: 70%;
-        margin-top: 6%;
-        padding: 2%;
-        border-radius: 20px;
-    }
-
-    .funcoes .verde{
-        display: none;
-    }
-
-    .funcoes .azul{
-        display: none;
-    }
-
-    .funcoes:nth-child(2n + 1){
-        background-color: #2CFC71;
-    }
-
-    .funcoes:nth-child(2n){
-        background-color: #00b4ff;
-    }
-
-    .linha {
-        display: none;
-    }
-
-    #servicos-bimo{
-        margin-top: 15%;
-        font-size: 120%;
-    }
-
-    .caixas{
-        gap: 20px;
-    }
-
-    .servicos{
-        padding-bottom: 4%;
-    }
-
-    .tabela-planos{
-        width: 90%;
-        font-size: 100%;
-    }
-
     .caixasequipe{
         gap: 30px;
         margin-top: 13%;
@@ -900,8 +708,4 @@ input[type="radio"] {
     #empresa{
         margin-left: 0;
     }
-}
-
-@media screen and (max-width: 320px) {
-    
 }
