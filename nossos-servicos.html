@@ -6,6 +6,7 @@
     <title>BiMO</title>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="nossos-servicos.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -14,16 +15,49 @@
         <ul class="menu-items">
             <li class="links"><a href="nossos-servicos.html">Serviços</a></li>
             <li class="links"><a href="nossos-planos.html">Planos</a></li>
-            <li class="links"><a href="#nossa-equipe">Equipe</a></li>
             <li class="links"><a href="login.html">Área Restrita</a></li>
-            <li class="links"><a href="#final">Contato</a></li>
             <li class="links"><a href="sobre-bimo.html">Sobre</a></li>
             <li class="links"><a href="#texto">ODS</a></li>
         </ul>
-        <a href="#menuLateral" id="menu-icon">
+        <a href="#menuHamb" id="menu-icon">
             <img src="menu.png" id="butmenu"></img>
         </a>
     </header>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=- MENU - HAMBURGUER -=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <div id="menuHamb">
+        <a href="" class="fechado">
+            <img src="fechar.png" alt="" id="fechar">
+        </a>
+
+        <a href="login.html" class="cont">
+            <div class="hamb-conta">
+                <p>Área Restrita</p>
+            </div>
+        </a>
+
+        <a href="nossos-servicos.html">
+            <div class="hamb-redirect">
+                <p>Serviço <img src="imagens/seta.png" alt=""></p>
+            </div>
+        </a>
+        <a href="nossos-planos.html">
+            <div class="hamb-redirect">
+                <p>Planos <img src="imagens/seta.png" alt=""></p>
+            </div>
+        </a>
+        <a href="sobre-bimo.html">
+            <div class="hamb-redirect">
+                <p>Sobre <img src="imagens/seta.png" alt=""></p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="hamb-redirect">
+                <p>ODS <img src="imagens/seta.png" alt=""></p>
+            </div>
+        </a>
+    </div>
 
     <h1>Nossos serviços</h1>
     <section id="servicos-bimo">

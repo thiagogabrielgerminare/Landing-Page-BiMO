@@ -82,6 +82,105 @@ h1{
     display: none;
     width: 35px;
 }
+
+/* -------------------------------------------------------- MENU LATERAL -------------------------------------------- */
+.hamb{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#menuHamb{
+    flex-direction: column;
+    /* background-color: #0ce253; */
+    width: 100vw;
+    height: 100vh;
+    margin-top: 80px;
+    padding-top: 1px;
+    color: white;
+    display: none;
+    z-index: 999;
+}
+
+#menuHamb > a{
+    display: flex;
+    justify-content: center;
+}
+
+.cont{
+    height: 10vh;
+    text-decoration: none;
+    color: #2176ae;
+}
+
+.cont:hover{
+    color: #69DF1B;
+}
+
+.fechado{
+    display: block;
+    width: 20px;
+    margin: 20px;
+}
+
+#fechar{
+    width: 40px;
+    height: 30px;
+}
+
+.hamb-conta{
+    display: flex;
+    height: 10vh;
+    width: 50vw;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px white solid;
+    padding: 0px 5vw;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.hamb-redirect{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 3vh 0vh;
+    padding: 2vh;
+    border-bottom: 4px solid white;
+}
+
+.hamb-redirect > p{
+    width: 100%;
+    font-size: 5vh;
+    font-weight: 500;
+    display: inline-block;
+    color: #2176ae;
+}
+
+.hamb-redirect > p > img{
+    display: inline-block;
+    width: 5vh;
+}
+
+.hamb-redirect > p:hover{
+    color: #69DF1B;
+}
+
+#menuHamb:target ~ * {
+    display: none;
+}
+  
+#menuHamb:target ~ header {
+    display: block;
+}
+
+#menuHamb:target {
+    display: block;
+}
 /* ----------------------------------------------------- Cards Planos BiMO ---------------------------------------------------------------*/
 #nossos-planos{
     margin-top: 100px;
@@ -165,4 +264,10 @@ h1{
 
 .ouro #butplanos{
     background-color: #ffcc00;
+}
+
+@media screen and (max-width: 960px) {
+    .menu-items{
+        display: none;
+    }
 }

@@ -97,7 +97,7 @@ h1{
 
 #menuHamb{
     flex-direction: column;
-    background-color: #F9A400;
+    /* background-color: #0ce253; */
     width: 100vw;
     height: 100vh;
     margin-top: 80px;
@@ -114,6 +114,12 @@ h1{
 
 .cont{
     height: 10vh;
+    text-decoration: none;
+    color: #2176ae;
+}
+
+.cont:hover{
+    color: #69DF1B;
 }
 
 .fechado{
@@ -122,11 +128,16 @@ h1{
     margin: 20px;
 }
 
+#fechar{
+    width: 40px;
+    height: 30px;
+}
+
 .hamb-conta{
     display: flex;
     height: 10vh;
     width: 50vw;
-    background-color: #FFCC68;
+    background-color: white;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
@@ -136,19 +147,13 @@ h1{
     font-weight: 550;
 }
 
-.hamb-conta > img{
-    margin-left: 2vh;
-    width: 8vh;
-    height: 8vh;
-}
-
 .hamb-redirect{
     float: left;
     width: 100%;
     height: auto;
     margin: 3vh 0vh;
     padding: 2vh;
-    border-bottom: 2px solid white;
+    border-bottom: 4px solid white;
 }
 
 .hamb-redirect > p{
@@ -156,11 +161,16 @@ h1{
     font-size: 5vh;
     font-weight: 500;
     display: inline-block;
+    color: #2176ae;
 }
 
 .hamb-redirect > p > img{
     display: inline-block;
     width: 5vh;
+}
+
+.hamb-redirect > p:hover{
+    color: #69DF1B;
 }
 
 #menuHamb:target ~ * {
@@ -211,14 +221,11 @@ h1{
     text-align: start;
 }
 
-#textoimg{
-    display: flex;
-    width: 600px;
-}
-
 #iconiniciobimo{
+    position: relative;
     width: 150px;
-    margin-left: 20px;
+    margin-left: 6px;
+    top: 10px;
 }
 
 #butinicio{
@@ -288,7 +295,7 @@ h1{
 
 @media screen and (max-width: 960px) {
     .propagandacm{
-        height: 50vh;
+        height: 55vh;
     }
 
     #textocm{
@@ -296,8 +303,18 @@ h1{
         font-size: 90%;
     }
 
+    #textocm p{
+        margin-top: 20px;
+    }
+
     #imgcm{
         display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .propagandacm{
+        height: 92vh;
     }
 }
 /* -------------------------------------------------------- Nossos serviços --------------------------------------------------------- */
@@ -346,8 +363,18 @@ h1{
         font-size: 90%;
     }
 
+    #textoservicos p{
+        margin-top: 20px;
+    }
+
     #imgpservicos{
         display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .propagandaservicos{
+        height: 95vh;
     }
 }
 /* --------------------------------------------------------- Nossos planos ----------------------------------------------------------- */
@@ -397,8 +424,18 @@ h1{
         font-size: 90%;
     }
 
+    #textoplanos p{
+        margin-top: 20px;
+    }
+
     #imgplanos{
         display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .propagandaplanos{
+        height: 105vh;
     }
 }
 /* -------------------------------------------------------- Nossa equipe ------------------------------------------------------------- */
@@ -485,13 +522,25 @@ input[type="radio"] {
     }
 
     .equipe{
-        height: 65vh;
+        height: 67vh;
+    }
+
+    .image img{
+        width: 180px;
+        height: 180px;
     }
 
     .arrow{
         width: 30px;
+        height: 30px;
         font-size: 20px;
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .equipe{
+        height: 115vh;
     }
 }
 
@@ -667,7 +716,6 @@ input[type="radio"] {
     #iconiniciobimo{
         width: 30%;
         height: 5vh;
-        margin-left: 5%;
     }
 
     #butinicio{
