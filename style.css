@@ -428,7 +428,7 @@ h1{
     width: 50%;
 }
 /* -------------------------------------------------------- Media Queries ---------------------------------------------------------- */
-@media screen and(max-width: 960px) {
+@media screen and (max-width: 960px) {
     .menu {
         justify-content: space-between;
         height: 70px;
